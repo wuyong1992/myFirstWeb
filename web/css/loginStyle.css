@@ -6,11 +6,11 @@
 }
 #divIN {
     /*background-image: url("../images/login02.jpg");*/
-
+   /* background-image: url("../images/snow.gif");*/
     position: relative;
     height: 45%;
     width: 45%;
-    left: 28%;
+    left: 25%;
     top: 25%;
 
 }
@@ -33,6 +33,7 @@
     flood-color: #257eff;
     font-size: 50px;
     text-align: center;
+
 }
 
 #Sdiv {
@@ -63,7 +64,24 @@
 body {
     font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
-#outID {
+.outID {
     font-size: 50px;
     flood-color: #17ff6a;
+}
+
+#ErroP {
+    text-align: center;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    color: orange;
+    font-size: 50px;
+}
+.div {
+    /*background-color: #17ff6a;*/
+    background-image: url("../images/erro.jpg");
+    height: 100%;
+}
+.info {
+    background: transparent;
+    border: 1px solid #ffffff;
+    font-size: 20px;
 }

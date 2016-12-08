@@ -12,19 +12,24 @@
 </head>
 <body>
 <%
+    //获取参数，并进行比较
     request.setCharacterEncoding("utf-8");
     String name = request.getParameter("name");
     String password = request.getParameter("password");
+    //判断是否为空
     if (null != name && null != password && "张三".equals(name) && "123".equals(password)) {
         session.setAttribute("user", name);
-        response.setHeader("refresh", "2;url=loginS.jsp");
 %>
-        <p>登录成功，两秒内跳转到主页面，或者点击<a href="loginS.jsp">这里</a>直接跳转</p>
+<jsp:forward page="loginS.jsp"/>
+<%
+        /*response.setHeader("refresh", "0;url=loginS.jsp");*/
+%>
+       <%-- <p>登录成功，两秒内跳转到主页面，或者点击<a href="loginS.jsp">这里</a>直接跳转</p>--%>
 <%
     } else {
         response.setHeader("refresh","2;url=index.jsp");
 %>
-        <p>登录错误两秒后返回登录页面，或者点击<a href="index.jsp">这里</a>这几跳转</p>
+        <p id="ErroP">登录错误两秒后返回登录页面，或者点击<a href="index.jsp">这里</a>这几跳转</p>
 <%
     }
 %>
