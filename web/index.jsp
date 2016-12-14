@@ -16,7 +16,8 @@
 <div id="divOUT">
     <p id="loginID">Login</p>
     <div id="divIN">
-        <form id="form" action="doLogin.jsp" method="post">
+        <%--这里的action可以是doLogin.jsp也可以是/ServletDoLogin--%>
+        <form id="form" action="/ServletDoLogin" method="post">
             <table>
                 <tr>
                     <td>
