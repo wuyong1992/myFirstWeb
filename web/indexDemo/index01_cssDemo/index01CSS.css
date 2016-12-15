@@ -1,0 +1,65 @@
+html,body {
+    height: 960px;
+    margin: 0;
+    padding: 0;
+}
+#cont {
+
+}
+#divHead {
+    height: 20%;
+    background-color: darkgoldenrod;
+}
+#divBody {
+    height: 60%;
+    background-color: burlywood;
+}
+#divFoot {
+    height: 20%;
+    background-color: cyan;
+}
+
+#divGPS {
+   /* width: 80%;*/
+    display: inline;
+}
+#ulGPS{
+   /* width:100%; 不可以设置，负责边界超出  */
+    height:60px;
+    background:#00A2CA;
+    margin:0 auto
+ }
+#ulGPS li {
+    display:inline;
+    height:60px
+}
+#ulGPS li a {
+    text-decoration: none;
+    display:inline-block;
+    padding:0 20px;
+    height:60px;
+    line-height:60px;
+    color:#FFF;
+    font-family:"\5FAE\8F6F\96C5\9ED1";
+    font-size:16px
+}
+#ulGPS li a:hover{
+    background:#0095BB
+}
+
+#liLogin {
+    margin-left: 50%;
+}
+#loginButton {
+    border: none;
+    background-color:#00A2CA;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    color: greenyellow;
+    font-style: italic;
+    height: 60px;
+    padding:0 20px;
+    font-size:20px
+}
+#loginButton:hover{
+    background:#0095BB
+}
