@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>混合布局</title>
+    <style>
+        * {
+            /*作用使和模型的内边距和边框厚度不会增加已经设定好的高宽*/
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .top {
+            height: 100px;
+            background: blanchedalmond;
+        }
+        .main {
+            height: 700px;
+            /*background: slategrey;*/
+            max-width: 1200px;
+            margin: 10px auto;
+        }
+        .mainLeft {
+            height: 100%;
+            width: 850px;
+            background: coral;
+            float: left;
+            position: relative;
+        }
+        .mainRight {
+            height: 100%;
+            width: 340px;
+            background: #af1fff;
+            float: right;
+        }
+        .leftHead {
+            height: 100px;
+            background: #80162e;
+            margin: 10px;
+        }
+        .leftMain {
+            background: gold;
+            height: 460px;
+            margin: 10px;
+            position: relative;
+        }
+        .LL {
+            background: blue;
+            height: 460px;
+            width:30%;
+            position: absolute;
+            left: 0;
+        }
+        .LM {
+            background: dimgrey;
+            height: 460px;
+            position: absolute;
+            left: 32%;
+            right: 32%;
+        }
+        .LR {
+            background: burlywood;
+            height: 460px;
+            width: 30%;
+            position: absolute;
+            right: 0;
+        }
+        .leftFoot {
+            height: 100px;
+            background: darkblue;
+            margin: 10px;
+        }
+        .foot {
+            height: 100px;
+            background: aquamarine;
+            max-width: 1200px;
+            margin: 10px auto;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div class="top"></div>
+    <div class="main">
+        <div class="mainLeft">
+            <div class="leftHead"></div>
+            <div class="leftMain">
+                <div class="LL"></div>
+                <div class="LM"></div>
+                <div class="LR"></div>
+            </div>
+            <div class="leftFoot"></div>
+        </div>
+        <div class="mainRight"></div>
+    </div>
+    <div class="foot"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01</title>
+    <style>
+        html,body {
+            height: 98%;
+        }
+        #cont {
+            height: 100%;
+            position: relative;
+            border: 1px solid green;
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            border: 1px solid lightpink;
+            border-radius: 10px;
+        }
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            border: 1px solid #80162e;
+            border-radius: 10px;
+        }
+        section {
+            margin-left: 200px;
+            border: 1px solid orange;
+            border-radius: 10px;
+        }
+        p {
+            text-indent: 2em;
+        }
+        footer {
+            width: 100%;
+            border: 1px solid green;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+        }
+        footer p {
+            text-align: center;
+        }
+
+        #div01 {
+            position: absolute;
+           /* height: 500px;*/
+
+            max-width: 70%;
+            left: 15%;
+            top: 500px;
+            border: 1px solid red;
+        }
+        #div02 {
+            /*height: 200px;*/
+            width: 25%;
+            border: 1px solid red;
+            margin: 10px auto;
+        }
+        #div02 p img {
+            width: 50%;
+            float: right;
+            margin: 0 0 1em 1em;
+        }
+    </style>
+</head>
+<body>
+<div id="cont">
+    <header>
+        <h1>通过具体的例子可以帮助我们更好地理解“position”。下面是一个真正的页面布局。</h1>
+    </header>
+    <div id="div01">
+        <nav>
+            <ul>
+               <li>av></li>
+               <li>Home</li>
+               <li>Taco Menu</li>
+               <li>Draft List</li>
+               <li>Hours</li>
+               <li>Directions</li>
+               <li>Contact</li>
+            </ul>
+        </nav>
+        <section>
+            <span>文本</span>
+            <p>section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。</p>
+        </section>
+        <section>
+            <span>文本</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas   odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+            </p>
+        </section>
+        <section>
+            <span>文本</span>
+            <p>
+                注意观察当你调整浏览器窗口时发生了什么。效果很赞！
+            </p>
+        </section>
+    </div>
+    <div id="div02">
+        <p>
+            <img src="../../images/05.jpg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus.
+        </p>
+    </div>
+    <footer>
+        <span>footer</span>
+        <p>
+            如果你使用了一个固定定位的页眉或页脚，确保有足够的空间来显示它们！我在 body 上面加了 margin-bottom 。
+        </p>
+    </footer>
+</div>
+</body>
+</html>

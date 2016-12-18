@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对、绝对定位测试</title>
+    <style>
+        * {
+            /*作用使和模型的内边距和边框厚度不会增加已经设定好的高宽*/
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        #div01 {
+            background-color: #17ff6a;
+            height: 200px;
+            width: 200px;
+        }
+
+        #div02 {
+            background-color: #00A2CA;
+            height: 200px;
+            width: 200px;
+        }
+
+        #div03 {
+            background-color: #af1fff;
+            height: 200px;
+            width: 200px;
+        }
+
+        #div04 {
+            background-color: coral;
+            height: 200px;
+            width: 200px;
+        }
+
+        span {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="divAll">
+    <div id="div01"><span>01</span></div>
+    <div id="div02"><span>02</span></div>
+    <div id="div03"><span>03</span></div>
+    <div id="div04"><span>04</span></div>
+</div>
+</body>
+</html>

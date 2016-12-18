@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行内块</title>
+    <style>
+        #div01 {
+            /*height: 500px;*/
+            border: 5px solid #0f1080;
+            margin: 20px;
+        }
+        .float {
+            float: left;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            border: 1px solid orange;
+        }
+        section {
+            clear: left;
+            border: 1px solid red;
+            margin: 10px;
+            text-align: center;
+        }
+        #div02 {
+            border: 5px solid #2b6580;
+            margin: 20px;
+        }
+        .inlineBlock {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            border: 1px solid orange;
+
+        }
+    </style>
+</head>
+<body>
+<div id="div01">
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+    <section id="floatS">
+        <p>使用了float使div块漂浮，同时文字section使用clear</p>
+    </section>
+</div>
+<div id="div02">
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <div class="inlineBlock"></div>
+    <section id="floatNS">
+        <p>使div元素变为inline-blocksection本身并未使用clear</p>
+    </section>
+</div>
+</body>
+</html>
